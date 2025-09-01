@@ -1,44 +1,44 @@
-
-
-
 use Farmer
 db.createCollection("farmers")
-db.farmers.insertone({  "_id": "1", 
-"firstName": "saiSukumar", 
-"lastName": "Pinninti",  
-"password": "Hello", 
-"dob": {    "$date": {      "$numberLong": "947548800000"    }  }, 
-"email": "sai@gmail.com", 
-"address": "saisukumar",  
-"mobileNumber": {    "$numberLong": "90007245889"  },  
-"paymentInfo": "1100",  
-"status": true,  
-"addons": [  ],  
-"_class": "com.cropdeal.entity.Dealer"})
+db.farmers.insertOne({  
+  "_id": "2", 
+  "firstName": "Ravi", 
+  "lastName": "Sharma",  
+  "password": "Welcome123", 
+  "dob": { "$date": { "$numberLong": "915148800000" } },  // 1999-01-01
+  "email": "ravi.sharma@example.com", 
+  "address": "Hyderabad",  
+  "mobileNumber": { "$numberLong": "9876543210" },  
+  "paymentInfo": "2500",  
+  "status": true,  
+  "addons": [ ],  
+  "_class": "com.cropdeal.entity.Dealer"
+})
 
 use Dealer
 db.createCollection("Dealer")
-db.Dealer.insertone({  "_id": "4", 
-"firstName": "saiSukumar", 
-"lastName": "Pinninti",  
-"password": "Hello", 
-"dob": {    "$date": {      "$numberLong": "947548800000"    }  }, 
-"email": "sai@gmail.com", 
-"address": "saisukumar",  
-"mobileNumber": {    "$numberLong": "90004725889"  },  
-"paymentInfo": "1100",  
-"status": true,  
-"addons": [     ],  
-"_class": "com.cropdeal.entity.Dealer"})
+db.Dealer.insertOne({  
+  "_id": "5", 
+  "firstName": "Anita", 
+  "lastName": "Verma",  
+  "password": "SecurePass", 
+  "dob": { "$date": { "$numberLong": "852076800000" } },  // 1997-01-01
+  "email": "anita.verma@example.com", 
+  "address": "Pune",  
+  "mobileNumber": { "$numberLong": "9123456780" },  
+  "paymentInfo": "3200",  
+  "status": true,  
+  "addons": [ ],  
+  "_class": "com.cropdeal.entity.Dealer"
+})
 
 use Crop
 db.createCollection("Crop")
-db.Crop.insertone({
-    "id": "0",
-    "farmerid": "2",
-    "name":"Brinjal",
-    "cost":200,
-    "quantity":7,
-    "type":"Kg"
-}
-
+db.Crop.insertOne({
+    "id": "1",
+    "farmerid": "3",
+    "name": "Tomato",
+    "cost": 150,
+    "quantity": 12,
+    "type": "Kg"
+})
