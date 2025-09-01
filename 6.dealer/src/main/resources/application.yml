@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: Master
+  application:
+    name: DealerService
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher

@@ -1,0 +1,14 @@
+server:
+  port: 8084
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: Master
+  application:
+    name: AdminService
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
